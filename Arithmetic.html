@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn()">Click Me!</button>
+    <br>
+    <br>
+    <div id="demo"></div>
+    <script>
+        this.mul = function (Input1, Input2){
+                return Input1 * Input2;
+            }
+        this.add = function (Input1, Input2){
+                return Input1 + Input2;
+            }
+        this.sub = function (Input1, Input2){
+                return Input1 - Input2;
+            }
+        this.div = function (Input1, Input2){
+                return Input1 / Input2;
+            }
+
+        const multi = mul(50,20);
+        const addi = add(50,20);
+        const subs = sub(50,20);
+        const divi = div(50,20);
+
+        function btn(){
+            document.getElementById("demo").innerHTML = 
+            "Multiplication: " + multi + "<br />"
+            + "Addition: " + addi + "<br />"
+            + "Subtraction: " + subs + "<br />"
+            + "Division: " + divi + "<br />";
+        }
+    </script>
+</body>
+</html>

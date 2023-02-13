@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn()">Click Me!</button>
+    <br>
+    <br>
+    <div id="demo"></div>
+    <script>
+        const FirstName = "Mary";
+        const LastName = "Smith";
+        const Address = "BURKHARDT RD. EVANSVILLE.";
+        const Age = "29";
+        const Email = "mary123@yahoo.com";
+
+        function properties(Nationality, Language) {
+            this.Nationality = Nationality;
+            this.Language = Language;
+        }
+
+        const newProperties = new properties("American", "English")
+
+        function btn(){
+            document.getElementById("demo").innerHTML = 
+            "First Name: " + FirstName + "<br />"
+            + "Last Name: " + LastName + "<br />"
+            + "Address: " + Address + "<br />"
+            + "Age: " + Age + "<br />"
+            + "Email: " + Email + "<br />"
+            + "Nationality: " + newProperties.Nationality + "<br />"
+            + "Language: " + newProperties.Language;
+        }
+
+
+
+       
+
+    </script>
+</body>
+</html>

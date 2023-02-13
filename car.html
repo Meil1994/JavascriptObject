@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn()">Click Me!</button>
+    <br>
+    <br>
+    <div id="demo"></div>
+    <script>
+        function car(Name, YearModel, EngineType, Manufacturer, Brand, CountryOrigin) {
+            this.Name = Name;
+            this.YearModel = YearModel;
+            this.EngineType = EngineType;
+            this.Manufacturer = Manufacturer;
+            this.Brand = Brand;
+            this.CountryOrigin = CountryOrigin
+        }
+
+        const myCar = new car("C40", 2022, "electric", "Zhejiang Geely Holding Group", "Volvo", "Sweden");
+
+        function btn(){
+            document.getElementById("demo").innerHTML = 
+            "Name: " + myCar.Name + "<br />"
+            + "Year Model: " + myCar.YearModel + "<br />"
+            + "Engine Type: " + myCar.EngineType+ "<br />" 
+            + "Manufacturer: " + myCar.Manufacturer+ "<br />"
+            + "Brand: " + myCar.Brand + "<br />"
+            + "Country of Origin: " + myCar.CountryOrigin + "<br />";
+        }
+
+    </script>
+</body>
+</html>
